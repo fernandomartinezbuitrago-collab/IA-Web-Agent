@@ -29,12 +29,12 @@ La magia de esta arquitectura radica en su separación estricta:
 ## ⚙️ Instalación y Requisitos
 
 ### 1. Clonar e Instalar Dependencias
+
 ```bash
 git clone [https://github.com/TU_USUARIO/IA-Web-Agent.git](https://github.com/TU_USUARIO/IA-Web-Agent.git)
 cd IA-Web-Agent
 pip install -r requirements.txt
 npm install -g vercel
-
 2. Variables de Entorno (.env)
 Necesitarás configurar tus claves de acceso:
 
@@ -67,3 +67,5 @@ Barberías / Salones: Web premium + Módulo de Reservas + Módulo de Novedades.
 Clínicas Dentales: Landing corporativa + Formulario de Captación blindado.
 
 Restaurantes: Carta digital + Motor de reservas de mesas.
+
+Construido para automatizar agencias. Diseñado para escalar.
