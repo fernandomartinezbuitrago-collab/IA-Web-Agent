@@ -30,19 +30,22 @@ La magia de esta arquitectura radica en su separación estricta:
 
 ### 1. Clonar e Instalar Dependencias
 
-```bash
 git clone [https://github.com/TU_USUARIO/IA-Web-Agent.git](https://github.com/TU_USUARIO/IA-Web-Agent.git)
 cd IA-Web-Agent
 pip install -r requirements.txt
 npm install -g vercel
 
-2. Variables de Entorno (.env)
+## 2. Variables de Entorno (.env)
+
 Necesitarás configurar tus claves de acceso:
 
 OPENAI_API_KEY=tu_clave_de_openai
 VERCEL_TOKEN=tu_token_de_vercel
 
-3. Setup de Supabase (Base de Datos)
+---
+
+## 3. Setup de Supabase (Base de Datos)
+
 Para que los módulos dinámicos funcionen, crea un proyecto en Supabase y configura dos tablas:
 
 Tabla Reservas (Columnas: nombre, fecha, hora)
@@ -51,7 +54,9 @@ Tabla Noticias (Columnas: titulo, contenido, imagen_url)
 
 Importante: Debes hacer clic en Disable RLS en ambas tablas desde el Table Editor para permitir la lectura/escritura a través de nuestra API ligera.
 
-🚀 Uso Rápido (En Google Colab o Local)
+---
+
+## 🚀 Uso Rápido (En Google Colab o Local)
 
 1. Ejecuta primero el núcleo del sistema cargando el archivo motor_v5.py. Esto inicializará el agente LangChain y la herramienta de fabricación.
 
@@ -63,7 +68,10 @@ construir_proyecto(blueprint)
 
 El agente creará los archivos físicos, generará las rutas de la API, se conectará a Vercel y devolverá el enlace de producción directamente por consola.
 
-💡 Ejemplos de Casos de Uso
+---
+
+## 💡 Ejemplos de Casos de Uso
+
 Barberías / Salones: Web premium + Módulo de Reservas + Módulo de Novedades.
 
 Clínicas Dentales: Landing corporativa + Formulario de Captación blindado.
